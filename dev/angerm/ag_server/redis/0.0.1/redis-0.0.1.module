@@ -1,0 +1,316 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.angerm.ag_server",
+    "module": "redis",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-reactor",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-jdk8",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-slf4j",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-bom",
+          "version": {
+            "requires": "1.7.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-kotlin"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-logback"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-retrofit2"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-rxjava3"
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging-jvm",
+          "version": {
+            "requires": "2.0.6"
+          }
+        },
+        {
+          "group": "com.uchuhimo",
+          "module": "konf",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient_hotspot",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient_httpserver",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "com.google.inject",
+          "module": "guice",
+          "version": {
+            "requires": "5.0.1"
+          }
+        },
+        {
+          "group": "io.lettuce",
+          "module": "lettuce-core",
+          "version": {
+            "requires": "6.1.1.RELEASE"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "redis-0.0.1.jar",
+          "url": "redis-0.0.1.jar",
+          "size": 14105,
+          "sha512": "c8f90490a07c22e7445e9b582e2f986447129577124405ba35fa52d466320f4f51130e06fafa17dd1d6c8299d5f202e25ecb814d5b14cdcfede72b8da33fd12c",
+          "sha256": "552426bd78388a2aa8b6c65b70141335a73e53451575025dd5c8125507b24087",
+          "sha1": "f1f59c815ae1afe020bb5b788ffb17ab48aaf366",
+          "md5": "2904a9e214e0f9a0863bf8a02f0e2c3a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "dev.angerm.ag_server",
+          "module": "base",
+          "version": {
+            "requires": "0.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-reactor",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-jdk8",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-slf4j",
+          "version": {
+            "requires": "1.4.3"
+          }
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-bom",
+          "version": {
+            "requires": "1.7.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-kotlin"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-logback"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-retrofit2"
+        },
+        {
+          "group": "com.linecorp.armeria",
+          "module": "armeria-rxjava3"
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging-jvm",
+          "version": {
+            "requires": "2.0.6"
+          }
+        },
+        {
+          "group": "com.uchuhimo",
+          "module": "konf",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient_hotspot",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "io.prometheus",
+          "module": "simpleclient_httpserver",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "com.google.inject",
+          "module": "guice",
+          "version": {
+            "requires": "5.0.1"
+          }
+        },
+        {
+          "group": "io.lettuce",
+          "module": "lettuce-core",
+          "version": {
+            "requires": "6.1.1.RELEASE"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "redis-0.0.1.jar",
+          "url": "redis-0.0.1.jar",
+          "size": 14105,
+          "sha512": "c8f90490a07c22e7445e9b582e2f986447129577124405ba35fa52d466320f4f51130e06fafa17dd1d6c8299d5f202e25ecb814d5b14cdcfede72b8da33fd12c",
+          "sha256": "552426bd78388a2aa8b6c65b70141335a73e53451575025dd5c8125507b24087",
+          "sha1": "f1f59c815ae1afe020bb5b788ffb17ab48aaf366",
+          "md5": "2904a9e214e0f9a0863bf8a02f0e2c3a"
+        }
+      ]
+    }
+  ]
+}
